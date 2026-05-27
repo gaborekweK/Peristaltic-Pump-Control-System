@@ -1,24 +1,10 @@
-# 🔧 Peristaltic Pump Control System
+# Peristaltic Pump Control System
 
 A comprehensive multi-pump control system designed for precise fluid handling using peristaltic pumps with four rollers. This system supports simultaneous operation of up to 4 pumps with web-based control interface and Arduino-based hardware control.
 
 ![Pump Control System UI](PumpControlSystem/Dashboard/UI.png)
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Hardware Requirements](#hardware-requirements)
-- [Software Requirements](#software-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Technical Specifications](#technical-specifications)
-- [Future Development](#future-development)
-- [Contributing](#contributing)
-
-## 🔍 Overview
+## Overview
 
 This Peristaltic Pump Control System is designed to control four peristaltic pumps simultaneously through a modern web interface. The system uses Arduino for hardware control and a Python Flask backend for communication and web serving. Each pump can handle fluids with viscosities up to 60,000 cP (centipoise), making it suitable for a wide range of applications from water to highly viscous fluids.
 
@@ -29,7 +15,7 @@ This Peristaltic Pump Control System is designed to control four peristaltic pum
 - **Viscosity Range**: Supports fluids up to 60K cP
 - **RPM Accuracy**: Input RPM is nominal - actual pump RPM affected by torque, load, and gear ratios
 
-## ✨ Features
+## Features
 
 - **Web-Based Control Interface**: Modern, responsive dashboard for pump control
 - **Real-Time Status Monitoring**: Live updates of pump states and system status
@@ -41,7 +27,7 @@ This Peristaltic Pump Control System is designed to control four peristaltic pum
 - **Auto-Discovery**: Automatic detection of Arduino on various COM ports
 - **Cross-Platform Support**: Works on Windows, macOS, and Linux
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────┐    HTTP/WebSocket    ┌─────────────────┐    Serial USB    ┌─────────────────┐
@@ -54,7 +40,7 @@ This Peristaltic Pump Control System is designed to control four peristaltic pum
         └─ Responsive Design                    └─ CORS Support                       └─ Pump Control Logic
 ```
 
-## 🔧 Hardware Requirements
+## Hardware Requirements
 
 - **Arduino Uno** (or compatible microcontroller)
 - **4x DRV8825 Stepper Motor Drivers**
@@ -73,7 +59,7 @@ Pump Z: Step=4, Dir=7,  Enable=8
 Pump A: Step=12,Dir=13, Enable=8
 ```
 
-## 💻 Software Requirements
+## Software Requirements
 
 ### Python Dependencies:
 ```bash
@@ -86,7 +72,7 @@ pip install flask flask-cors pyserial
 - **Modern Web Browser** (Chrome, Firefox, Safari, Edge)
 - **USB Drivers** (for Arduino communication)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -149,7 +135,7 @@ EMERGENCY          # Emergency stop all pumps
 STATUS             # Get pump status
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 P_PumpControl_/
@@ -179,7 +165,7 @@ P_PumpControl_/
 - **`script.js`**: Frontend logic for API communication and real-time updates
 - **`style.css`**: Modern styling with animations and responsive design
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 ### Pump Performance:
 - **Maximum Fluid Viscosity**: 60,000 cP (centipoise)
@@ -201,7 +187,7 @@ P_PumpControl_/
 - **Real-time Updates**: JavaScript polling every 2 seconds
 - **Browser Support**: Modern browsers with ES6 support
 
-## 🔮 Future Development
+## Future Development
 
 I am currently working on an enhanced version that will include:
 
@@ -221,7 +207,7 @@ I am currently working on an enhanced version that will include:
 - Mobile app development
 - Cloud connectivity options
 
-## ⚠️ Important Notes
+## Important Notes
 
 1. **RPM Accuracy**: The RPM values entered in the dashboard are nominal. Actual pump RPM will be affected by:
    - Motor torque characteristics
