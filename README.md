@@ -106,7 +106,7 @@ python main.py
 ### 6. Access Web Interface
 Open your browser and navigate to: `http://localhost:5000`
 
-## 📖 Usage
+## Usage
 
 ### Web Interface Controls:
 
